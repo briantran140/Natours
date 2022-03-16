@@ -1,0 +1,39 @@
+.section-about {
+  padding: 25rem 0;
+  background-color: $color-grey-light-1;
+  margin-top: -20vh;
+
+  &__details {
+    display: flex;
+    padding: 0 17rem;
+
+    &--text {
+      flex: 0 0 50%;
+      margin-right: 3rem;
+      padding-right: 7rem;
+    }
+
+    &--images {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  transform: skewY(-3deg);
+  margin-top: -5rem;
+
+  &__layout {
+    display: flex;
+    justify-content: center;
+    transform: skewY(3deg);
+  }
+}
