@@ -4,9 +4,17 @@
   background-color: $color-grey-dark-3;
   color: $color-grey-light-2;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -17,17 +25,31 @@
   &__layout {
     display: flex;
     justify-content: space-around;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   &__navigation-box {
     flex: 0 0 40%;
     text-align: right;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__navigation {
     border-top: 1px solid $color-grey-dark;
     display: inline-block;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__items {
@@ -73,5 +95,11 @@
     width: 80%;
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 85%;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }

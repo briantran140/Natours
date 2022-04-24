@@ -8,6 +8,16 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
   transition: transform 0.3s;
 
+  @include respond(tab-port) {
+    width: 60%;
+    padding: 2rem;
+    margin: 4rem;
+  }
+
+  @include respond(phone) {
+    width: 70%;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
@@ -27,8 +37,5 @@
     background-clip: text;
     color: transparent;
     display: inline-block;
-  }
-
-  &__text {
   }
 }
