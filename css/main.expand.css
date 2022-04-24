@@ -489,14 +489,6 @@ body {
           flex: 0 0 20%;
   position: relative;
   height: 53rem;
-  height: auto;
-  margin: 7rem auto;
-  width: 50%;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .card:not(:last-child) {
@@ -678,51 +670,56 @@ body {
   font-weight: 100;
 }
 
-.card:not(:last-child) {
-  margin: 7rem auto;
-}
-
-.card-side {
-  font-size: 2rem;
-  height: auto;
-  position: relative;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.card-side--back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-}
-
-.card:hover .card-side--front {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
-.card__details {
-  padding: 1rem 3rem;
-}
-
-.card__cta {
-  position: relative;
-  top: 0%;
-  left: 0%;
-  -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-          transform: translate(0);
-  width: 100%;
-  padding: 7rem 4rem 4rem 4rem;
-}
-
-.card__price-box {
-  margin-bottom: 8rem;
-}
-
-.card__price-value {
-  font-size: 6rem;
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    margin: 7rem auto;
+    width: 50%;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card:not(:last-child) {
+    margin: 7rem auto;
+  }
+  .card-side {
+    font-size: 2rem;
+    height: auto;
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .card-side--back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .card:hover .card-side--front {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  .card__details {
+    padding: 1rem 3rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  .card__price-box {
+    margin-bottom: 8rem;
+  }
+  .card__price-value {
+    font-size: 6rem;
+  }
 }
 
 .composition {
